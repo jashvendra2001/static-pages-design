@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mettrassAbout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins";
+      }
+      button {
+        cursor: pointer;
+      }
+      h3 {
+        margin: 0px;
+        padding: 0px;
+      }
+      .contact-blue {
+        background: #161694;
+        border-radius: 20px;
+        padding: 40px 0px 40px 80px;
+        top: 190px;
+        position: absolute;
+        width: 100%;
+        left: 70px;
+        z-index: 1;
+      }
+      .contact-blue h3 {
+        font-size: 30px !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        margin-bottom: 30px !important;
+        text-align: left !important;
+      }
+      .call-us-text span {
+        color: #f6a227;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: block;
+      }
+      .call-us-text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .call-us-sec {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 30px;
+      }
+      .call-us-text {
+        margin-left: 20px;
+        color: #fff;
+      }
+      .call-us-sec i {
+        font-size: 18px;
+        color: #f6a227;
+      }
+      .call-us-text p + p {
+        margin-bottom: 0px;
+      }
+      .call-us-sec + .call-us-sec {
+        margin-bottom: 0px;
+      }
+      .talk-with-main-cntnr {
+        position: relative;
+        top: -100px;
+      }
+      /*talk-with-sec start*/
+      .talk-with-sec {
+        box-shadow: 4px 10px 15px #dfdfdf;
+        border-radius: 20px;
+        background: #fff;
+        padding: 40px 40px 40px 100px;
+      }
+      /*talk-with-sec end*/
+      .contact-mainbanner img {
+        width: 100%;
+      }
+      .talk-with-sec h3 {
+        font-size: 30px;
+        color: #2e2e2e;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .talk-with-sec p {
+        margin-bottom: 0px;
+      }
+      .talk-with-sec form {
+        margin-top: 40px;
+      }
+      .talk-with-sec .form-control {
+        padding: 10px 0.75rem;
+      }
+      .talk-with-sec .form-group {
+        margin-bottom: 25px;
+      }
+      .talk-with-sec input::placeholder {
+        font-size: 14px;
+      }
+      .talk-with-sec label {
+        font-size: 16px;
+      }
+      .talk-with-sec textarea {
+        resize: none;
+        height: 130px;
+      }
+      .talk-with-sec button {
+        background: #161694;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 30px;
+        border: 0px;
+        border-radius: 6px;
+        float: right;
+      }
+      .talk-with-sec button:focus {
+        border: 0px;
+        outline: 0px;
+      }
+      .btn-wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+      /*talk-with-sec end*/
+      /*our stores sec start*/
+      .our-store-cntnr h3 {
+        text-align: center;
+        font-size: 30px;
+        color: #2e2e2e;
+        font-weight: 700;
+      }
+      .our-store-cntnr {
+        margin-bottom: 40px;
+      }
+      .our-store-cntnr .contact-blue {
+        position: static;
+        padding: 40px 20px 40px 30px;
+        text-align: left;
+      }
+      .our-store-cntnr .call-us-sec + .call-us-sec {
+        margin-bottom: 30px;
+      }
+      .our-store-cntnr .call-us-text p {
+        font-size: 14px;
+      }
+      .our-store-cntnr .call-us-sec:last-child {
+        margin-bottom: 0px;
+      }
+      .flex {
+        display: flex;
+        margin-top: 70px;
+      }
+      .our-store-cntnr iframe {
+        border: 0;
+        margin: 8% 0px;
+        box-shadow: 4px 10px 15px #dfdfdf;
+      }
+      .call-us-text p + p strong {
+        display: block;
+      }
+      /*our stores sec end*/
+      @media only screen and (max-width: 768px) {
+        .talk-with-main-cntnr .col-sm-12 {
+          max-width: 100%;
+          flex: 100%;
+        }
+        .why-buy .row > div {
+          margin-bottom: 30px;
+        }
+        .talk-with-main-cntnr .contact-blue {
+          position: static;
+        }
+        .talk-with-sec {
+          padding-left: 40px;
+        }
+      }
+      @media screen and (max-width: 768px) and (min-width: 560px) {
+        .bed-img {
+          margin-top: -138px !important;
+          margin-left: 36px !important;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        .we-are-sec p,
+        .abut-use-new p {
+          font-size: 12px !important;
+          line-height: 35px !important;
+          padding: 0px 15px;
+        }
+        .flex {
+          display: flex;
+          flex-wrap: inherit;
+        }
+        .bed-img {
+          display: none;
+        }
+        .we-are-sec h3 {
+          font-size: 20px !important;
+          text-align: center;
+        }
+      }
+      /*we are sec start-about*/
+      .we-are-sec h3 {
+        color: #161694;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: "Poppins";
+        margin-bottom: 20px;
+      }
+      .we-are-sec {
+        margin-top: 30px;
+      }
+      .we-are-sec p,
+      .abut-use-new p {
+        font-size: 16px;
+        line-height: 35px;
+      }
+      .why-buy {
+        background: #fafaff;
+        padding: 60px 40px;
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+      }
+      .why-buy h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .why-buy p {
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 40px;
+      }
+      .why-buy .row > div {
+        text-align: left;
+        font-weight: bold;
+      }
+      .bed-img {
+        margin-top: -111px;
+        margin-left: 60px;
+      }
+      .img-fluid {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <img
+            src="https://resources.commerceup.io/?key=https://prod-admin-images.s3.ap-south-1.amazonaws.com/RdtjCejFp27xNPFZssFF/other/image-ACyVUvji4.jpg&width=600&png=true&resourceKey=RdtjCejFp27xNPFZssFF
+        
+          "
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container abut-use-new">
+        <div class="row">
+          <div class="col-md-6 we-are-sec p-0">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eos
+              labore error, ad totam eaque in neque natus quae voluptatem ea
+              culpa sunt laborum nulla, explicabo voluptates nobis magnam iste
+              voluptatibus obcaecati, velit animi. Et placeat velit beatae
+              quaerat, dolore, minus animi omnis fuga cupiditate, in aut non.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1617046774731-b2c14cc8c377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              class="img-fluid bed-img"
+            />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            incidunt quisquam, amet assumenda libero a debitis quasi, facere,
+            aut ducimus omnis velit deserunt qui. Enim voluptatibus consequuntur
+            nam fuga dolores? Quaerat veritatis laborum a labore exercitationem
+            ut provident assumenda eveniet doloribus inventore ducimus ipsa,
+            nobis neque, hic doloremque quos vero possimus nihil. Esse a ut
+            voluptatem provident suscipit alias laborum, consequuntur est
+            dignissimos totam officia corporis ex et magni numquam rerum natus,
+            sapiente maiores doloribus consequatur! Illum distinctio, amet
+            molestiae inventore consequuntur quos vero illo, temporibus
+            assumenda sit dolores deleniti, provident aut autem corporis
+            veritatis cumque culpa error ullam eos.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nobis
+            maiores fugiat expedita dolores corporis quaerat totam illum ullam
+            quas tempore voluptatum, reprehenderit voluptatibus fuga qui esse
+            perspiciatis cum! Tenetur pariatur soluta corporis ad laudantium
+            ratione sed cum fugiat aperiam, reiciendis iusto blanditiis sit
+            atque placeat animi maiores tempore repellat!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quas
+            aut corporis delectus rem nisi architecto debitis? Iste nemo nobis
+            eaque id maiores possimus suscipit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="why-buy">
+            <!-- <img
+              src="https://prod-admin-images.s3.ap-south-1.amazonaws.com/2RdY-lnFhY__7lLn2PD1/other/image-ONp4wJJPs.png"
+              class="img-fluid"
+            /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

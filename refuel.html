@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+      .abtUs {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .abtUs a {
+        color: unset;
+      }
+
+      .abtUs a:hover {
+        text-decoration: unset;
+        color: unset;
+      }
+
+      @media (max-width: 600px) {
+        .abtUs html {
+          font-size: 13px;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .abtUs html {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .abtUs html {
+          font-size: 15px;
+        }
+      }
+
+      @media (min-width: 1500px) {
+        .abtUs html {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .abtUs .abtUs-main {
+          padding: 0 8% !important;
+        }
+      }
+
+      .abtUs .abtUs-banner {
+        width: 100%;
+        height: auto;
+        background: #ccc;
+        height: auto;
+      }
+
+      @media (min-width: 600px) {
+        .abtUs .abtUs-banner {
+          height: auto;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .abtUs .abtUs-banner {
+          height: auto;
+        }
+      }
+
+      @media (min-width: 1500px) {
+        .abtUs .abtUs-banner {
+          height: auto;
+        }
+      }
+
+      .abtUs .abtUs-banner img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+      }
+
+      .abtUs ol {
+        padding-left: 14px;
+      }
+
+      .abtUs .primaryhead {
+        position: relative;
+        color: #90268f;
+        font-weight: 700;
+        font-size: 1.7rem;
+      }
+
+      @media (max-width: 992px) {
+        .abtUs .primaryhead {
+          font-size: 1.35rem;
+        }
+      }
+
+      .abtUs .primaryhead:after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #90268f;
+        display: block;
+      }
+
+      .abtUs h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      @media (max-width: 992px) {
+        .abtUs h2 {
+          font-size: 1.25rem;
+        }
+      }
+
+      .abtUs .newsletterDiv {
+        background: #f7f7f7;
+        padding: 5% 0;
+      }
+
+      .abtUs .newsletterDiv .newsletter {
+        position: relative;
+        min-width: 228px;
+      }
+
+      .abtUs .newsletterDiv .newsletter input {
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        padding-right: 10%;
+        border: none;
+        border-radius: 0px;
+        background: transparent;
+        border-bottom: 1px solid #000;
+      }
+
+      @media (max-width: 767px) {
+        .abtUs .newsletterDiv .newsletter input {
+          height: 26px;
+        }
+      }
+
+      .abtUs .newsletterDiv .newsletter input::-webkit-input-placeholder {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .abtUs .newsletterDiv .newsletter input:-ms-input-placeholder {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .abtUs .newsletterDiv .newsletter input::-ms-input-placeholder {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .abtUs .newsletterDiv .newsletter input::placeholder {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      @media (max-width: 767px) {
+        .abtUs .newsletterDiv .newsletter input::-webkit-input-placeholder {
+          font-size: 12px;
+        }
+
+        .abtUs .newsletterDiv .newsletter input:-ms-input-placeholder {
+          font-size: 12px;
+        }
+
+        .abtUs .newsletterDiv .newsletter input::-ms-input-placeholder {
+          font-size: 12px;
+        }
+
+        .abtUs .newsletterDiv .newsletter input::placeholder {
+          font-size: 12px;
+        }
+      }
+
+      .abtUs .newsletterDiv .newsletter img {
+        position: absolute;
+        right: 20px;
+        position: absolute;
+        right: 6px;
+        top: 1px;
+        color: #424242;
+        width: 26px;
+      }
+
+      @media (max-width: 767px) {
+        .abtUs .newsletterDiv .newsletter img {
+          top: 1px;
+        }
+      }
+
+      .abtUs .heading-second {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      @media (max-width: 992px) {
+        .abtUs .heading-second {
+          font-size: 1rem;
+        }
+      }
+
+      .abtUs p {
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      @media (max-width: 992px) {
+        .abtUs p {
+          font-size: 1rem;
+        }
+      }
+
+      .abtUs ul li {
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      @media (max-width: 992px) {
+        .abtUs ul li {
+          font-size: 1rem;
+        }
+      }
+
+      .abtUs a:hover {
+        text-decoration: none;
+      }
+
+      .abtUs .divider {
+        background: #f8f8f8;
+      }
+
+      @media (min-width: 768px) {
+        .abtUs .divider {
+          padding: 5% 0;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .abtUs .divider .col-md-6:first-child {
+          border-right: 1px solid #c1c1c1;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .abtUs .last-img-div img {
+          min-height: 500px;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+      }
+
+      .abtUs .brand img {
+        width: 70px;
+        object-fit: contain;
+        margin-top: 20px;
+      }
+
+      .abtUs .blockQuote {
+        min-height: 300px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .abtUs .blockQuote .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .abtUs .blockQuote h3,
+      h4,
+      h5 {
+        z-index: 9;
+      }
+
+      .abtUs .blockQuote h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+      }
+
+      .abtUs .blockQuote h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+
+      .abtUs .blockQuote h5 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 8px;
+      }
+
+      @media (max-width: 600px) {
+        .abtUs .blockQuote h3 {
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+
+        .abtUs .blockQuote h4 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+
+        .abtUs .blockQuote h5 {
+          font-size: 0.8rem;
+          font-weight: 500;
+          margin-top: 8px;
+        }
+      }
+
+      #staticPageBanner {
+        width: 100%;
+        height: 300px;
+      }
+
+      @media (max-width: 800px) {
+        #staticPageBanner {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abtUs">
+      <h1>
+        <img
+          alt=""
+          class="mb-3 mb-lg-5"
+          id="staticPageBanner"
+          src="https://images.unsplash.com/photo-1655742047610-cc1d176c3caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        />
+      </h1>
+      <div class="container-fluid abtUs-main">
+        <div class="row my-5">
+          <div class="col-lg-7 order-0 order-lg-0">
+            <p class="MsoNormal">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur suscipit vitae dolorem quos nemo eius laborum
+              quisquam, ipsum veritatis eum, alias nostrum recusandae quas
+              voluptate labore, consequatur similique facere minima?!<o:p></o:p>
+            </p>
+            <p class="MsoNormal">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              assumenda ducimus nesciunt unde distinctio? Eos rem consequuntur
+              repellendus. Placeat odit ipsum aperiam esse nesciunt sequi.
+              Commodi inventore minus cum, necessitatibus delectus aperiam ab
+              blanditiis vero amet ex doloremque debitis asperiores consequuntur
+              pariatur, adipisci laboriosam accusantium, voluptatem expedita
+              corrupti explicabo porro.<o:p></o:p>
+            </p>
+            <p class="MsoNormal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur corrupti perspiciatis facilis unde doloribus quam,
+              aspernatur officiis quisquam ut molestias iusto voluptas
+              recusandae, illum inventore, voluptates excepturi? Esse facilis
+              dolor vitae non expedita ut reiciendis. Consectetur expedita nobis
+              perferendis dolor impedit fuga voluptates amet similique aliquam
+              tenetur pariatur iste dolore at illo iure doloribus quibusdam
+              perspiciatis obcaecati non reiciendis, sint iusto error omnis!
+              Animi iste minima esse neque architecto, eaque, delectus vel alias
+              numquam quae natus voluptas fugiat cum rem mollitia blanditiis!
+              Sapiente, doloremque!<o:p></o:p>
+            </p>
+            <p class="MsoNormal"></p>
+            <p class="MsoNormal">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              vel reiciendis!<o:p></o:p>
+            </p>
+          </div>
+          <div
+            class="col-lg-5 order-1 order-lg-1 d-flex justify-content-center"
+          >
+            <img
+              alt=""
+              class="img-fluid"
+              src="https://resources.commerceup.io/?key=https://prod-admin-images.s3.ap-south-1.amazonaws.com/S8TEk-xf_70r_Xb3mUIQ1/other/image-tzpOEfmpZ.jpg&amp;width=600&amp;resourceKey=S8TEk-xf_70r_Xb3mUIQ1"
+              style="max-height: 500px"
+            />
+          </div>
+        </div>
+        <div
+          class="row newsletterDiv d-flex flex-column justify-content-center align-items-center my-5 mx-auto"
+        >
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p class="text-center">
+            Lorem ipsum, dolor sit amet consectet &amp;Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Asperiores.
+          </p>
+          <div
+            class="newsletter d-flex align-items-center pl-4 col-10 col-lg-6"
+          >
+            <input
+              class="form-control"
+              id="email"
+              placeholder="Your Email Address"
+              type="email"
+            />
+            <div
+              class="btn"
+              onclick="window.submitNewsletter()"
+              style="
+                background: black;
+                color: white;
+                cursor: pointer;
+                border-radius: 0px;
+                margin-left: 10px !important;
+                font-weight: 500;
+                font-size: 1.1rem;
+              "
+            >
+              SUBSCRIBE
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
